@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Znw-Lc-Wno">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1Jd-YD-Z7u">
+            <objects>
+                <navigationController id="X2i-9u-ZbN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Toy-Em-gMt">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ga1-C8-tM8" kind="relationship" relationship="rootViewController" id="tKl-aB-vZJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tW4-hM-QoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1668" y="-806"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="V9z-Hr-jbL">
+            <objects>
+                <viewController id="ga1-C8-tM8" customClass="initialViewController" customModule="BismillAllah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rwp-b3-axQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02d-sc-iOd">
+                                <rect key="frame" x="96.666666666666686" y="401" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="C9s-PO-Ti5"/>
+                                    <constraint firstAttribute="height" constant="50" id="zQH-MM-GDu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="ga1-C8-tM8" eventType="touchUpInside" id="75p-Yc-D8h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d8i-zB-4fJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="02d-sc-iOd" firstAttribute="centerY" secondItem="Rwp-b3-axQ" secondAttribute="centerY" id="kN1-Xx-2y8"/>
+                            <constraint firstItem="02d-sc-iOd" firstAttribute="centerX" secondItem="Rwp-b3-axQ" secondAttribute="centerX" id="vlV-pD-5sc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tff-R8-op8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypm-pc-6en" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1581" y="-32"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="k8M-8F-ASW">
+            <objects>
+                <viewController id="Znw-Lc-Wno" customClass="loginViewController" customModule="BismillAllah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9EW-Pi-QIT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maF-DL-dRC">
+                                <rect key="frame" x="96.666666666666686" y="401" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.24262025910000001" green="0.86078912019999998" blue="0.212502254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Kve-3T-Wg5"/>
+                                    <constraint firstAttribute="height" constant="50" id="S8h-a8-xpu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="Znw-Lc-Wno" eventType="touchUpInside" id="Gal-78-E8u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xdS-xU-a6P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="maF-DL-dRC" firstAttribute="centerY" secondItem="9EW-Pi-QIT" secondAttribute="centerY" id="Uh8-5k-ThF"/>
+                            <constraint firstItem="maF-DL-dRC" firstAttribute="centerX" secondItem="9EW-Pi-QIT" secondAttribute="centerX" id="ayf-wD-pqw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVA-rr-FvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2482" y="-425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
